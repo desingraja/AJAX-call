@@ -1,0 +1,29 @@
+// GET method in JS
+
+          $.ajax({
+            type: "GET", 
+            url: serviceUrl,
+            crossDomain:true,
+            cache:false,
+            async:false,
+            success: function(data){
+                console.log(data);
+            }
+        })
+      
+      
+      
+  // POST 
+  
+          $.ajax({
+          type: "POST", 
+          url: serviceUrl,
+          crossDomain:true,
+          data:JSON.stringify(datas),
+          contentType: "application/json; charset=utf-8",
+          cache:false,
+          async:false,
+          success: function(data){
+              console.log(data);
+          }
+      })
